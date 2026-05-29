@@ -1,0 +1,104 @@
+body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #d8fff3, #9be7c4, #67d5b5);
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .shape span {
+        position: absolute;
+        border-radius: 50%;
+
+        background: rgba(4, 145, 98, 0.45);
+
+        filter: blur(3px);
+
+        animation: float 10s infinite ease-in-out;
+    }
+
+    .shape span:nth-child(1) {
+        width: 180px;
+        height: 180px;
+        top: 40px;
+        left: 50px;
+    }
+
+    .shape span:nth-child(2) {
+        width: 140px;
+        height: 140px;
+        top: 250px;
+        left: 200px;
+    }
+
+    .shape span:nth-child(3) {
+        width: 220px;
+        height: 220px;
+        bottom: 40px;
+        left: 450px;
+    }
+
+    .shape span:nth-child(4) {
+        width: 170px;
+        height: 170px;
+        top: 180px;
+        right: 180px;
+    }
+
+    .shape span:nth-child(5) {
+        width: 130px;
+        height: 130px;
+        bottom: 100px;
+        right: 100px;
+    }
+
+    @keyframes float {
+
+        0% {
+            transform: translateY(0px);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+
+        100% {
+            transform: translateY(0px);
+        }
+    }
+    .card-body{
+                background: rgba(255,255,255,0.18);
+                border: 1px solid rgba(255,255,255,0.3);
+                backdrop-filter: blur(15px);
+                -webkit-backdrop-filter: blur(15px);
+                border-radius: 25px;
+                box-shadow:0 8px 32px rgba(0,0,0,0.15);
+                color: #123;
+                position: relative;
+                z-index: 2;
+            }
+      .f-login{
+        display: flex;
+        align-items:center;
+        justify-content: center;
+      }
+      .f-login p{
+        font-size: xx-large;
+        font-weight: bolder;
+        color: black;
+      }
+      .button{
+        background-color: #41ac8c !important;
+        background-color: #41ac8c00;
+      }
