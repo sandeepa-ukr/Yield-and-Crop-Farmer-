@@ -1,5 +1,5 @@
-<footer class="footer">
-        <div class="container">
+<footer class="">
+        <!-- <div class="container">
                     <div class="row">         
                 <div class="col-4 col-md-2   align-self-center">				
                     <img class="align-text-center img-fluid"  src="assets/img/footer-logo.png" />               
@@ -45,7 +45,7 @@
                     <p>&copy; Copyright 2023 AGRICULTURE PORTAL, All Rights Reserved </p>
                 </div>
            </div>
-        </div>
+        </div> -->
     </footer>
 
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

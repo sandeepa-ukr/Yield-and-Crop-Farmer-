@@ -24,11 +24,6 @@ $query4 = "SELECT * from farmerlogin where email='$user_check'";
 <?php include ('fheader.php');  ?>
 
 <body class="bg-white" id="top">
-
-    <?php include ('fnav.php');  ?>
-
-
-    <section class="section section-shaped section-lg">
         <div class="shape ">
             <span></span>
             <span></span>
@@ -41,6 +36,11 @@ $query4 = "SELECT * from farmerlogin where email='$user_check'";
             <span></span>
             <span></span>
         </div>
+    <?php include ('fnav.php');  ?>
+
+
+    <section class="section section-shaped section-lg">
+
         <!-- ======================================================================================================================================== -->
 
         <div class="container ">

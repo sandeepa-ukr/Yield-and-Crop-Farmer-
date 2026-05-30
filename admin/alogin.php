@@ -9,7 +9,7 @@ include('aloginScript.php'); // Includes Login Script
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
+    <!-- <style>
     body {
         margin: 0;
         padding: 0;
@@ -113,7 +113,13 @@ include('aloginScript.php'); // Includes Login Script
       .button{
         background-color: #41ac8c !important;
       }
+    </style> -->
+    <style>
+        nav{
+            margin-bottom:50px;
+        }
     </style>
+    <link rel="stylesheet" href="../assets/css/card.css">
     <link rel="icon" type="image/png" href="../assets/img/logo.png" />
     <title>Agriculture Portal</title>
 
@@ -140,7 +146,19 @@ include('aloginScript.php'); // Includes Login Script
 
 </head>
 
-<body class="bg-white" id="top">
+<body class="bg-white" id="top" style="position:relative">
+    <div class="shape ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     <!-- Navbar -->
     <nav id="navbar-main" class="
         navbar navbar-main navbar-expand-lg
@@ -149,13 +167,13 @@ include('aloginScript.php'); // Includes Login Script
         position-sticky
         top-0
         shadow
-        py-0
-      ">
+        py-0 
+      " >
         <div class="container">
             <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
                 <li class="nav-item dropdown">
-                    <a href="../index.php" class="navbar-brand mr-lg-5 text-white">
-                        <img src="../assets/img/nav.png" />
+                    <a href="index.php" class="navbar-brand mr-lg-5 text-white">
+                        <img src="../assets/img/nav.png" style="width: 70%; padding:30px 50px 30px 0px;"/>
                     </a>
                 </li>
             </ul>
@@ -167,11 +185,7 @@ include('aloginScript.php'); // Includes Login Script
             <div class="navbar-collapse collapse bg-default" id="navbar_global">
                 <div class="navbar-collapse-header">
                     <div class="row">
-                        <div class="col-10 collapse-brand">
-                            <a href="../index.html">
-                                <img src="../assets/img/nav.png" />
-                            </a>
-                        </div>
+                        
                         <div class="col-2 collapse-close bg-danger">
                             <button type="button" class="navbar-toggler" data-toggle="collapse"
                                 data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
@@ -192,6 +206,7 @@ include('aloginScript.php'); // Includes Login Script
                         </a>
                     </li>
 
+
                     <li class="nav-item">
                         <div class="dropdown show ">
                             <a class="nav-link dropdown-toggle text-white " href="#" role="button" id="dropdownMenuLink"
@@ -201,8 +216,8 @@ include('aloginScript.php'); // Includes Login Script
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="../farmer/fregister.php">Farmer</a>
-                                <a class="dropdown-item" href="../customer/cregister.php">Customer</a>
+                                <a class="dropdown-item" href="farmer/fregister.php">Farmer</a>
+                                <a class="dropdown-item" href="customer/cregister.php">Customer</a>
                             </div>
                         </div>
                     </li>
@@ -210,20 +225,19 @@ include('aloginScript.php'); // Includes Login Script
 
                     <li class="nav-item">
                         <div class="dropdown show ">
-                            <a class="nav-link dropdown-toggle text-success " href="#" role="button"
-                                id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="text-success nav-link-inner--text"><i
-                                        class="text-success fas fa-sign-in-alt"></i> Login</span>
+                            <a class="nav-link dropdown-toggle text-white " href="#" role="button" id="dropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="text-white nav-link-inner--text"><i
+                                        class="text-white fas fa-sign-in-alt"></i> Login</span>
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                <a class="dropdown-item" href="../farmer/flogin.php">Farmer</a>
+                                <a class="dropdown-item" href="flogin.php">Farmer</a>
                                 <a class="dropdown-item" href="../customer/clogin.php">Customer</a>
-                                <a class="dropdown-item" href="alogin.php">Admin </a>
+                                <a class="dropdown-item" href="../admin/alogin.php">Admin </a>
                             </div>
                         </div>
                     </li>
-
 
 
                 </ul>
@@ -233,18 +247,7 @@ include('aloginScript.php'); // Includes Login Script
     <!-- End Navbar -->
 
     <section class="section section-shaped section-lg">
-        <div class="shape ">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+        
         <!-- ======================================================================================================================================== -->
 
 
@@ -260,7 +263,7 @@ include('aloginScript.php'); // Includes Login Script
                 <div class="col-sm-12 mb-3">
 
                     <div class="f-login">
-                        <p>Farmer Login</p>
+                        <p>Admin Login</p>
 
                     </div>
 

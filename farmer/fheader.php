@@ -26,8 +26,6 @@
 		
 
   <link rel="stylesheet" href="../assets/css/creativetim.min.css" type="text/css">
-
-
 <script src="../assets/js/state_district_crops_dropdown.js"></script>
 
 

@@ -146,9 +146,6 @@ include('cloginScript.php'); // Includes Login Script
 </head>
 
 <body class="bg-white" id="top">
-    <!-- Navbar -->
-    <?php require("nav.php");?>
-    <!-- End Navbar -->
 
     <section class="section section-shaped section-lg">
         <div class="shape">
@@ -165,6 +162,9 @@ include('cloginScript.php'); // Includes Login Script
         </div>
         <!-- ======================================================================================================================================== -->
 
+    <!-- Navbar -->
+    <?php require("nav.php");?>
+    <!-- End Navbar -->
         <div class="container">
 
             <div class="row">

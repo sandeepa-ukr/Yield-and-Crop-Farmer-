@@ -45,6 +45,9 @@ $query5 = "SELECT StateName from state where StCode ='$state'";
 <html>
     <head>
         <style>
+            .shape{
+                z-index: -1;
+            }
             
             .profile-img{
                 width: 180px;
@@ -79,13 +82,7 @@ $query5 = "SELECT StateName from state where StCode ='$state'";
 
 
 <body class="glass-bg" id="top">
-
-    <?php include ('fnav.php');  ?>
-
-
-
-    <section class="section section-shaped section-lg">
-        <div class="shape  ">
+<div class="shape  ">
             <span></span>
             <span></span>
             <span></span>
@@ -98,6 +95,12 @@ $query5 = "SELECT StateName from state where StCode ='$state'";
             <span></span>
             
         </div>
+    <?php include ('fnav.php');  ?>
+
+
+
+    <section class="section section-shaped section-lg">
+        
         <!-- ======================================================================================================================================== -->
 
         <div class="container ">
