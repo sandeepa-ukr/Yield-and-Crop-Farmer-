@@ -68,19 +68,14 @@ function getdistrict(val) {
     </div>
 <!-- ======================================================================================================================================== -->
 
-<div class="container">
+<div class="container mt-7">
 
- <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <span class="badge badge-info badge-pill mb-3">Register</span>
-          </div>
-        </div> 
       
 <div class="row">
 <div class="col-sm-12 mb-3">  
 			  
   <div class="nav nav-tabs nav-fill bg-gradient-default" id="nav-tab" role="tablist">
-    <a class="nav-item nav-link active font-weight-bold text-warning" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Farmer Singup</a>
+    <a class="nav-item nav-link active font-weight-bold text-black display-3" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Farmer Singup</a>
 
   </div>
                   
@@ -104,14 +99,14 @@ function getdistrict(val) {
  </script>
  
 			   <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" > Farmer Name <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" > Farmer Name <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
                   <input class="form-control" type="text" name="name"  required="true"/>
                 </div>				
               </div>
 			  
 			  <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" > Email Address <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" > Email Address <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
                   <input class="form-control" type="email" name="email" required="true" />
                 </div>
@@ -119,7 +114,7 @@ function getdistrict(val) {
               </div>
 			  
 			  <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" > Mobile No <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" > Mobile No <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
                   <input class="form-control" type="number"  name="mobile" required="true" pattern="[6789][0-9]{9}" />
                 </div>
@@ -127,7 +122,7 @@ function getdistrict(val) {
 			  
 			  
 			    <div class="form-group row">
-                <label class="col-md-3 col-form-label text-white" for="email"
+                <label class="col-md-3 col-form-label text-black" for="email"
                   >Gender </label
                 >
                 <div class=" col-md-9">
@@ -142,7 +137,7 @@ function getdistrict(val) {
 			  
 			  				  
 			      <div class="form-group row">
-                <label class="col-md-3 col-form-label text-white" for="dob"
+                <label class="col-md-3 col-form-label text-black" for="dob"
                   >DOB</label
                 >
                 <div class="col-md-9">
@@ -156,7 +151,7 @@ function getdistrict(val) {
 			  
 			  
 			  <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" required="true"> State <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" required="true"> State <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
                  <select onChange="getdistrict(this.value);"  name="state" id="state" class="form-control" >
                     <option value="">Select State</option>
@@ -173,7 +168,7 @@ function getdistrict(val) {
               </div>
 			  
 			  <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" required="true"> District <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" required="true"> District <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
 	<select  name="district" id="district-list" class="form-control">
 <option value="">Select District</option>
@@ -183,14 +178,14 @@ function getdistrict(val) {
 			  
 		  
 			    <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" >City <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" >City <strong class="text-default"> *</strong></label>
                 <div class="col-md-9">
                   <input class="form-control" type="text" name="city"  required="true"/>
                 </div>				
               </div>
 			  
 			  		 <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" > Password <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" > Password <strong class="text-default"> *</strong></label>
 			   <div class="col-9">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -203,7 +198,7 @@ function getdistrict(val) {
                   <i class="fas fa-eye-slash d-none" id="hide_eye"></i>
                 </span>
               </div>
-			  			  			  <span class="text-white d-block"> Use minimum 8 Characters with atleast 1 numericals, Capital letter and Special Character.  </span>
+			  			  			  <span class="text-black d-block"> Use minimum 8 Characters with atleast 1 numericals, Capital letter and Special Character.  </span>
 
             </div>
 
@@ -211,7 +206,7 @@ function getdistrict(val) {
 		   </div>
 	
 			  		 <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" >Confirm Password <strong class="text-default"> *</strong></label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" >Confirm Password <strong class="text-default"> *</strong></label>
 			   <div class="col-9">
             <div class="input-group mb-3">
               <div class="input-group-prepend">
@@ -232,7 +227,7 @@ function getdistrict(val) {
 		   
 			  
 			   <div class="form-group row">
-                <label for="staffid" class="col-md-3 col-form-label text-white" >  </label>
+                <label for="staffid" class="col-md-3 col-form-label text-black" >  </label>
                 <div class="col-md-9">
             <button name="farmerregister" class=" btn-block btn btn-success"><span class="glyphicon glyphicon-edit"></span> Submit</button>		
                 </div>		

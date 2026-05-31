@@ -16,102 +16,112 @@ $query4 = "SELECT * from custlogin where email='$user_check'";
 
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" href="../assets/css/card.css">
+</head>
 <?php include ('cheader.php');  ?>
 
-  <body class="bg-white" id="top">
-  
-<?php include ('cnav.php');  ?>
- 	
- 	
-  <section class="section section-shaped section-lg">
-    <div class="shape shape-style-1 shape-primary">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+<body class="bg-white" id="top">
+    <div class="shape">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
-<!-- ======================================================================================================================================== -->
+    <?php include ('cnav.php');  ?>
+
+
+    <section class="section section-shaped section-lg">
+
+        <!-- ======================================================================================================================================== -->
 
 
 
-<div class="container ">
-    
-    	 <div class="row">
-          <div class="col-md-8 mx-auto text-center">
-            <span class="badge badge-danger badge-pill mb-3">Crops</span>
-          </div>
-        </div>
-		
-          <div class="row row-content">
-            <div class="col-md-12 mb-3">
+        <div class="container ">
 
-				<div class="card text-white bg-gradient-warning mb-3">
-				  <div class="card-header">
-				  <span class=" text-warning display-4" > Crop Availability </span>
-				  
-					
-				  </div>
-				  
-				  <div class="card-body text-white">
-				<table class="table table-striped table-hover table-bordered bg-gradient-white text-center display" id="myTable">
-				
-				    <thead>
-		<tr class="font-weight-bold text-default">
-						
-								
-					<th><center>Crop Name</center></th>
-					<th><center>Quantity (in KG)</center></th>
-												
-						</tr>
-			</thead>
-	
-	
-				
-		<tbody>	  
-							  
-						<?php 
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <div class="f-login">
+                        <p>Crops</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-content">
+                <div class="col-md-12 mb-3">
+
+                    <div class=" text-black  mb-3">
+                        <div class="text-center">
+                            <span class=" text-dark display-4"> Crop Availability </span>
+
+
+                        </div>
+
+                        <div class="card-body text-white">
+                            <table
+                                class="table table-striped table-hover table-bordered bg-gradient-white text-center display"
+                                id="myTable">
+
+                                <thead>
+                                    <tr class="font-weight-bold text-default">
+
+
+                                        <th>
+                                            <center>Crop Name</center>
+                                        </th>
+                                        <th>
+                                            <center>Quantity (in KG)</center>
+                                        </th>
+
+                                    </tr>
+                                </thead>
+
+
+
+                                <tbody>
+
+                                    <?php 
 	$sql = "SELECT crop, quantity FROM production_approx where quantity > 0";
 
 								$query = mysqli_query($conn,$sql);
 
 								while($res = mysqli_fetch_array($query)){	
-				 ?>		  
-						  
-		 <tr class="text-center">
-							 <td> <?php echo $res['crop'];  ?> </td>
-							 <td> <?php echo $res['quantity'];  ?> </td>
-							</tr>
+				 ?>
 
-							 <?php 
+                                    <tr class="text-center">
+                                        <td> <?php echo $res['crop'];  ?> </td>
+                                        <td> <?php echo $res['quantity'];  ?> </td>
+                                    </tr>
+
+                                    <?php 
 							 }
 							  ?>
-							  
-		</tbody>
-				  </table>			
-				  </div>
-				</div>
-				
-					 		  
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-          </div>
         </div>
-		 
-</section>
+
+    </section>
 
     <?php require("footer.php");?>
 
-	   <script>
-				$(document).ready( function () {
-    $('#myTable').DataTable();
-} );
-</script>
+    <script>
+    $(document).ready(function() {
+        $('#myTable').DataTable();
+    });
+    </script>
 </body>
 
 </html>
-

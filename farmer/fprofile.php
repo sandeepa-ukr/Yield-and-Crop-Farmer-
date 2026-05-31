@@ -43,71 +43,79 @@ $query5 = "SELECT StateName from state where StCode ='$state'";
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <style>
-            .shape{
-                z-index: -1;
-            }
-            
-            .profile-img{
-                width: 180px;
-                border: 4px solid rgba(255,255,255,0.3);
-                padding: 5px;
-            }
-            .container{
-                position: relative;
-                /* z-index: 2; */
-            }
-            .card h4, .card h6{
-                color: #133;
-                font-weight: 600;
-            }
-            .text-dark{
-                color: #244 !important;
-            }
-            .edit-btn{
-                background: rgba(0,120,90,0.8);
-                border: none;
-                color: white;
-                padding: 10px 25px;
-                border-radius: 12px;
-                transition: 0.3s;
-            }
-        </style>
-        <link rel="stylesheet" href="../assets/css/card.css">
-    
-    
-    </head>
+
+<head>
+    <style>
+    .shape {
+        z-index: -1;
+    }
+
+    .profile-img {
+        width: 180px;
+        border: 4px solid rgba(255, 255, 255, 0.3);
+        padding: 5px;
+    }
+
+    .container {
+        position: relative;
+        /* z-index: 2; */
+    }
+
+    .card h4,
+    .card h6 {
+        color: #133;
+        font-weight: 600;
+    }
+
+    .text-dark {
+        color: #244 !important;
+    }
+
+    .edit-btn {
+        background: rgba(0, 120, 90, 0.8);
+        border: none;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+    </style>
+    <link rel="stylesheet" href="../assets/css/card.css">
+
+
+</head>
 <?php include ('fheader.php');  ?>
 
 
 <body class="glass-bg" id="top">
-<div class="shape  ">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            
-        </div>
+    <div class="shape  ">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
     <?php include ('fnav.php');  ?>
 
 
 
     <section class="section section-shaped section-lg">
-        
+
         <!-- ======================================================================================================================================== -->
 
         <div class="container ">
 
             <div class="row">
                 <div class="col-md-8 mx-auto text-center">
-                    <span class="badge badge-danger badge-pill mb-3">Profile</span>
+                    <div class="f-login">
+                        <p>Profile</p>
+                    </div>
                 </div>
             </div>
 
@@ -119,16 +127,13 @@ $query5 = "SELECT StateName from state where StCode ='$state'";
                         <div class="card-body">
                             <div class="d-flex flex-column align-items-center text-center">
 
-                                <img src="../assets/img/agri.png"
-                                    alt="agri"
+                                <img src="../assets/img/agri.png" alt="agri"
                                     class="rounded-circle img-fluid profile-img">
 
                                 <div class="mt-3">
                                     <h4>Welcome <?php echo $login_session ?></h4>
 
-                                    <button data-toggle="modal"
-                                        data-target="#edit"
-                                        class="btn edit-btn">
+                                    <button data-toggle="modal" data-target="#edit" class="btn edit-btn">
                                         Edit Profile
                                     </button>
 

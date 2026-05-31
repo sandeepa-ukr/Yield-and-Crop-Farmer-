@@ -117,7 +117,7 @@ include('floginScript.php'); // Includes Login Script
     </style> -->
     <style>
         nav{
-            margin-bottom:50px;
+            /* margin-bottom:150px; */
         }
     </style>
     <link rel="stylesheet" href="../assets/css/card.css">

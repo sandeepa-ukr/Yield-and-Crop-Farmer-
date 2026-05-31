@@ -25,7 +25,7 @@
                 <div class="row">
                     <div class="col-10 collapse-brand">
                         <a href="../index.html">
-                            <img src="../assets/img/nav.png" />
+                            <!-- <img src="../assets/img/nav.png" /> -->
                         </a>
                     </div>
                     <div class="col-2 collapse-close bg-danger">

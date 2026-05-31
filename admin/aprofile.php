@@ -32,11 +32,7 @@ $query4 = "SELECT * from admin where admin_name ='$user'";
 <?php require ('aheader.php');  ?>
 
   <body class="bg-white" id="top">
-  
-<?php require ('anav.php');  ?>
- 	
-  <section class="section section-shaped section-lg">
-    <div class="shape ">
+  <div class="shape ">
       <span></span>
       <span></span>
       <span></span>
@@ -48,6 +44,10 @@ $query4 = "SELECT * from admin where admin_name ='$user'";
       <span></span>
       <span></span>
     </div>
+<?php require ('anav.php');  ?>
+ 	
+  <section class="section section-shaped section-lg">
+    
 <!-- ======================================================================================================================================== -->
 <div class="container ">
     

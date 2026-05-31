@@ -16,10 +16,7 @@ if(isset($_POST ['customerlogin'])) {
   if ($rowcount==true) {
     $_SESSION['customer_login_user']=$customer_email; // Initializing Session
 	
-      $deletequery="DELETE FROM cart";
-      $deletecart=mysqli_query($conn,$deletequery);
-
-    header("location: ctwostep.php"); // Redirecting To Other Page
+    header("location: cprofile.php"); // Redirecting To Other Page
     } 
     else  {
        $error = "Username or Password is invalid";
